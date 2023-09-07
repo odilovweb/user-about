@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+button {
+  background-color: transparent;
+  font-size: 25px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.add-user {
+  background-color: rgb(24, 0, 240);
+  border: 3px solid rgb(11, 211, 78);
+  padding: 7px;
+  border-radius: 10px;
+  color: rgb(170, 255, 0);
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.add-user:hover {
+  opacity: 0.7;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  max-width: 400px;
+  width: 100%;
+  background-color: beige;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+}
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-inp {
+  padding: 5px;
+  max-width: 150px;
+  width: 100%;
+  margin-left: 10px;
+}
+.wrapper span {
+  font-size: 20px;
+}
+.gen-sp {
+  display: block;
+}
+.gen-inp {
+  display: inline-block;
+  max-width: 30px;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+.blur {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+.users-list {
+  position: fixed;
+  top: 25%;
+}
+.users-list ul {
+  width: 100%;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+.users-list li {
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 330px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-size: 20px;
+}
+.users-list h1 {
+  font-size: 20px;
+}
+.user-img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 60px;
+  object-fit: cover;
+  height: 60px;
+  border-radius: 50%;
+}
